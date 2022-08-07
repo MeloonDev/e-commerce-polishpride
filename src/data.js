@@ -21,3 +21,56 @@ export const sliderItems = [
     bg: "#def5dc",
   },
 ];
+
+export const categories = [
+  {
+    id: 1,
+    img: "https://i.postimg.cc/hGP8PRLt/marlon-alves-A0m-SSCEVh9-A-unsplash.jpg",
+    title: "T-SHIRTY!",
+  },
+  {
+    id: 1,
+    img: "https://i.postimg.cc/sgzvsPYj/the-ian-ZCoqcr-Wp9-GY-unsplash.jpg",
+    title: "BLUZY",
+  },
+  {
+    id: 1,
+    img: "https://i.postimg.cc/Xv7qyV1t/santhosh-vaithiyanathan-yl-Hc-Wlr-Mlzs-unsplash.jpg",
+    title: "SPODNIE",
+  },
+];
+
+export const popularProducts = [
+  {
+    id: 1,
+    img: "https://i.postimg.cc/DyQnn9fD/ryan-hoffman-6-Nub980b-I3-I-unsplash.jpg",
+  },
+  {
+    id: 2,
+    img: "https://i.postimg.cc/DyQnn9fD/ryan-hoffman-6-Nub980b-I3-I-unsplash.jpg",
+  },
+  {
+    id: 3,
+    img: "https://i.postimg.cc/DyQnn9fD/ryan-hoffman-6-Nub980b-I3-I-unsplash.jpg",
+  },
+  {
+    id: 4,
+    img: "https://i.postimg.cc/DyQnn9fD/ryan-hoffman-6-Nub980b-I3-I-unsplash.jpg",
+  },
+  {
+    id: 5,
+    img: "https://i.postimg.cc/DyQnn9fD/ryan-hoffman-6-Nub980b-I3-I-unsplash.jpg",
+  },
+  {
+    id: 6,
+    img: "https://i.postimg.cc/DyQnn9fD/ryan-hoffman-6-Nub980b-I3-I-unsplash.jpg",
+  },
+  {
+    id: 7,
+    img: "https://i.postimg.cc/DyQnn9fD/ryan-hoffman-6-Nub980b-I3-I-unsplash.jpg",
+  },
+  {
+    id: 8,
+    img: "https://i.postimg.cc/DyQnn9fD/ryan-hoffman-6-Nub980b-I3-I-unsplash.jpg",
+  },
+];
