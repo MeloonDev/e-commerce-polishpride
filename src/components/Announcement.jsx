@@ -14,9 +14,7 @@ const Container = styled.div`
 
 const Announcement = () => {
   return (
-    <Container>
-      Nowa kolekcja już dostępna! Darmowa dostawa już od 99zł!
-    </Container>
+    <Container>Nowa kolekcja dostępna! Darmowa dostawa już od 99zł!</Container>
   );
 };
 
