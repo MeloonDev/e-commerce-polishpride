@@ -43,34 +43,26 @@ export const categories = [
 export const popularProducts = [
   {
     id: 1,
-    img: "https://i.postimg.cc/DyQnn9fD/ryan-hoffman-6-Nub980b-I3-I-unsplash.jpg",
+    img: "https://i.postimg.cc/4d7yKTxt/removal-ai-tmp-62effd6c7e2da.png",
   },
   {
     id: 2,
-    img: "https://i.postimg.cc/DyQnn9fD/ryan-hoffman-6-Nub980b-I3-I-unsplash.jpg",
+    img: "https://i.postimg.cc/4d7yKTxt/removal-ai-tmp-62effd6c7e2da.png",
   },
   {
     id: 3,
-    img: "https://i.postimg.cc/DyQnn9fD/ryan-hoffman-6-Nub980b-I3-I-unsplash.jpg",
+    img: "https://i.postimg.cc/4d7yKTxt/removal-ai-tmp-62effd6c7e2da.png",
   },
   {
     id: 4,
-    img: "https://i.postimg.cc/DyQnn9fD/ryan-hoffman-6-Nub980b-I3-I-unsplash.jpg",
+    img: "https://i.postimg.cc/4d7yKTxt/removal-ai-tmp-62effd6c7e2da.png",
   },
   {
     id: 5,
-    img: "https://i.postimg.cc/DyQnn9fD/ryan-hoffman-6-Nub980b-I3-I-unsplash.jpg",
+    img: "https://i.postimg.cc/4d7yKTxt/removal-ai-tmp-62effd6c7e2da.png",
   },
   {
     id: 6,
-    img: "https://i.postimg.cc/DyQnn9fD/ryan-hoffman-6-Nub980b-I3-I-unsplash.jpg",
-  },
-  {
-    id: 7,
-    img: "https://i.postimg.cc/DyQnn9fD/ryan-hoffman-6-Nub980b-I3-I-unsplash.jpg",
-  },
-  {
-    id: 8,
-    img: "https://i.postimg.cc/DyQnn9fD/ryan-hoffman-6-Nub980b-I3-I-unsplash.jpg",
+    img: "https://i.postimg.cc/4d7yKTxt/removal-ai-tmp-62effd6c7e2da.png",
   },
 ];

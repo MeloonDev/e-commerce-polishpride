@@ -48,6 +48,7 @@ const Button = styled.button`
   color: gray;
   font-weight: 500;
   transition: all 0.2s;
+  cursor: pointer;
 
   &:hover {
     background-color: gray;
@@ -62,7 +63,7 @@ const CategoryItem = ({ item }) => {
       <Shadow />
       <Info>
         <Title>{item.title}</Title>
-        <Button>KUP TERAZ</Button>
+        <Button>SPRAWDŹ</Button>
       </Info>
     </Container>
   );

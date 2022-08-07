@@ -72,7 +72,7 @@ const NavBar = () => {
       <Wrapper>
         <Left>
           <SearchContainer>
-            <Input />
+            <Input placeholder="Szukaj" />
             <SearchIcon style={{ color: "gray", fontSize: "16px" }} />
           </SearchContainer>
         </Left>
