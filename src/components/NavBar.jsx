@@ -7,6 +7,8 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
+  /* max-width: 80vw;
+  margin: 0 auto; */
   padding: 10px 20px;
   display: flex;
   align-items: center;
