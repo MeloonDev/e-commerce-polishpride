@@ -29,12 +29,12 @@ export const categories = [
     title: "T-SHIRTY!",
   },
   {
-    id: 1,
+    id: 2,
     img: "https://i.postimg.cc/sgzvsPYj/the-ian-ZCoqcr-Wp9-GY-unsplash.jpg",
     title: "BLUZY",
   },
   {
-    id: 1,
+    id: 3,
     img: "https://i.postimg.cc/Xv7qyV1t/santhosh-vaithiyanathan-yl-Hc-Wlr-Mlzs-unsplash.jpg",
     title: "SPODNIE",
   },
