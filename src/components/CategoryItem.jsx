@@ -37,21 +37,21 @@ const Info = styled.div`
 const Title = styled.h1`
   color: #fff;
   margin-bottom: 20px;
-  text-shadow: 0 0 4px black;
+  /* text-shadow: 0 0 4px black; */
 `;
 
 const Button = styled.button`
   border: none;
-  box-shadow: 0 0 4px black;
+  /* box-shadow: 0 0 4px black; */
   padding: 10px;
   background-color: #fff;
-  color: gray;
+  color: black;
   font-weight: 500;
   transition: all 0.2s;
   cursor: pointer;
 
   &:hover {
-    background-color: gray;
+    background-color: #333;
     color: #fff;
   }
 `;

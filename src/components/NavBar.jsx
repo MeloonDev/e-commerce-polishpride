@@ -1,9 +1,16 @@
-import React from "react";
 import styled from "styled-components";
 import SearchIcon from "@mui/icons-material/Search";
+import { useState } from "react";
+import { useEffect } from "react";
 
 const Container = styled.div`
   height: 60px;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  background-color: #fff;
+  top: 0;
+  border-bottom: 1px solid gray;
 `;
 
 const Wrapper = styled.div`
@@ -62,6 +69,7 @@ const MenuItem = styled.div`
   margin-left: 20px;
 
   &:hover {
+    color: #028082;
     text-decoration: underline;
   }
 `;

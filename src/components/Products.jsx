@@ -2,11 +2,12 @@ import Product from "./Product";
 import styled from "styled-components";
 import { popularProducts } from "../data";
 
-const Title = styled.h1`
-  text-transform: uppercase;
-  text-decoration: underline;
-  text-align: center;
-`;
+// const Title = styled.h1`
+//   text-transform: uppercase;
+//   /* text-decoration: underline; */
+//   font-weight: 400;
+//   text-align: center;
+// `;
 
 const Container = styled.div`
   padding: 20px;
@@ -17,14 +18,14 @@ const Container = styled.div`
 
 const Products = () => {
   return (
-    <Title>
-      Bestsellery:
-      <Container>
-        {popularProducts.map((item) => (
-          <Product key={item.id} item={item} />
-        ))}
-      </Container>
-    </Title>
+    // <Title>
+    //   Bestsellery
+    <Container>
+      {popularProducts.map((item) => (
+        <Product key={item.id} item={item} />
+      ))}
+    </Container>
+    //  </Title>
   );
 };
 export default Products;

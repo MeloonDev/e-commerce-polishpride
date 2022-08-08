@@ -55,7 +55,7 @@ const Center = styled.div`
 
 const Title = styled.h3`
   margin-bottom: 30px;
-  text-align: center;
+  /* text-align: center; */
 `;
 
 const List = styled.ul`
@@ -72,6 +72,7 @@ const ListItem = styled.li`
   cursor: pointer;
 
   &:hover {
+    color: #028082;
     text-decoration: underline;
   }
 `;

@@ -1,9 +1,9 @@
-import React from "react";
 import styled from "styled-components";
 
 const Container = styled.div`
+  margin-top: 60px;
   height: 30px;
-  background-color: #ec668e;
+  background-color: #028082;
   color: white;
   display: flex;
   justify-content: center;

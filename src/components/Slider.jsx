@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { sliderItems } from "../data";
 
 const Container = styled.div`
+  margin-top: 10px;
   width: 100%;
   height: 50vh;
   display: flex;

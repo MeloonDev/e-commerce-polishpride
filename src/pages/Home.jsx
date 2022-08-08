@@ -8,8 +8,8 @@ import Slider from "../components/Slider";
 const Home = () => {
   return (
     <div>
-      <Announcement />
       <NavBar />
+      <Announcement />
       <Slider />
       <Categories />
       <Products />

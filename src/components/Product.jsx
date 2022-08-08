@@ -25,8 +25,13 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f7f7f1;
+  background-color: #f6f6f6;
   position: relative;
+  transition: all 0.2s;
+
+  &:hover {
+    transform: scale(1.02);
+  }
 
   &:hover ${Info} {
     opacity: 1;
@@ -34,15 +39,30 @@ const Container = styled.div`
 `;
 
 const Circle = styled.div`
-  width: 250px;
+  /* width: 250px;
   height: 250px;
   border-radius: 50%;
   background-color: #fff;
-  position: absolute;
+  position: absolute; */
 `;
 const Image = styled.img`
   height: 75%;
   z-index: 2;
+`;
+
+const Name = styled.h1`
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  font-size: 25px;
+  font-weight: 800;
+`;
+
+const Price = styled.p`
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  font-size: 19px;
 `;
 
 const Icon = styled.div`
@@ -58,7 +78,7 @@ const Icon = styled.div`
   transition: all 0.3s ease;
 
   &:hover {
-    background-color: #e9f5f5;
+    background-color: #f6f6f6;
     transform: scale(1.1);
   }
 `;
@@ -68,6 +88,8 @@ const Product = ({ item }) => {
     <Container>
       <Circle />
       <Image src={item.img} />
+      <Name>{item.title}</Name>
+      <Price>{item.price} zł</Price>
       <Info>
         <Icon>
           <SearchOutlinedIcon />

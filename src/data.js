@@ -44,25 +44,37 @@ export const popularProducts = [
   {
     id: 1,
     img: "https://i.postimg.cc/4d7yKTxt/removal-ai-tmp-62effd6c7e2da.png",
+    title: "T-shirt POLISHPRIDE BASIC",
+    price: "99",
   },
   {
     id: 2,
     img: "https://i.postimg.cc/4d7yKTxt/removal-ai-tmp-62effd6c7e2da.png",
+    title: "T-shirt POLISHPRIDE BASIC",
+    price: "99",
   },
   {
     id: 3,
     img: "https://i.postimg.cc/4d7yKTxt/removal-ai-tmp-62effd6c7e2da.png",
+    title: "T-shirt POLISHPRIDE BASIC",
+    price: "99",
   },
   {
     id: 4,
     img: "https://i.postimg.cc/4d7yKTxt/removal-ai-tmp-62effd6c7e2da.png",
+    title: "T-shirt POLISHPRIDE BASIC",
+    price: "99",
   },
   {
     id: 5,
     img: "https://i.postimg.cc/4d7yKTxt/removal-ai-tmp-62effd6c7e2da.png",
+    title: "T-shirt POLISHPRIDE BASIC",
+    price: "99",
   },
   {
     id: 6,
     img: "https://i.postimg.cc/4d7yKTxt/removal-ai-tmp-62effd6c7e2da.png",
+    title: "T-shirt POLISHPRIDE BASIC",
+    price: "99",
   },
 ];
