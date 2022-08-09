@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { sliderItems } from "../data";
+import { mobile } from "../responsive";
 
 const Container = styled.div`
   margin-top: 10px;
@@ -12,6 +13,11 @@ const Container = styled.div`
   /* background-color: coral; */
   position: relative;
   overflow: hidden;
+
+  ${mobile({
+    height: "30vh",
+    marginTop: "5px",
+  })}
 `;
 
 const Arrow = styled.div`
@@ -30,6 +36,10 @@ const Arrow = styled.div`
   margin: auto;
   cursor: pointer;
   z-index: 2;
+
+  ${mobile({
+    display: "none",
+  })}
 `;
 
 const Wrapper = styled.div`
@@ -67,6 +77,10 @@ const InfoContainer = styled.div`
 const Title = styled.h1`
   font-size: 35px;
   width: 80%;
+
+  ${mobile({
+    fontSize: "18px",
+  })}
 `;
 
 const Description = styled.p`
@@ -75,6 +89,11 @@ const Description = styled.p`
   font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 3px;
+
+  ${mobile({
+    fontSize: "12px",
+    margin: "10px 0 15px 0",
+  })}
 `;
 
 const Button = styled.button`
@@ -88,6 +107,11 @@ const Button = styled.button`
     background-color: black;
     color: white;
   }
+
+  ${mobile({
+    fontSize: "12px",
+    padding: "5px",
+  })}
 `;
 
 const Slider = () => {

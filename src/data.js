@@ -49,7 +49,7 @@ export const popularProducts = [
   },
   {
     id: 2,
-    img: "https://i.postimg.cc/4d7yKTxt/removal-ai-tmp-62effd6c7e2da.png",
+    img: "https://i.postimg.cc/JzgZhdzW/bao-bao-GREEBEty-R9-Y-unsplash-prev-ui.png",
     title: "T-shirt POLISHPRIDE BASIC",
     price: "99",
   },

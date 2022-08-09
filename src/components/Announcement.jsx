@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { mobile } from "../responsive";
 
 const Container = styled.div`
   margin-top: 60px;
@@ -10,6 +11,11 @@ const Container = styled.div`
   align-items: center;
   font-size: 14px;
   font-weight: 500;
+
+  ${mobile({
+    marginTop: "50px",
+    fontSize: "13px",
+  })}
 `;
 
 const Announcement = () => {

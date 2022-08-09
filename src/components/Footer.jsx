@@ -5,9 +5,14 @@ import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PhoneEnabledIcon from "@mui/icons-material/PhoneEnabled";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
+import { mobile } from "../responsive";
 
 const Container = styled.div`
   display: flex;
+
+  ${mobile({
+    flexDirection: "column",
+  })}
 `;
 
 const Left = styled.div`
@@ -51,11 +56,18 @@ const SocialIcon = styled.div`
 const Center = styled.div`
   flex: 1;
   padding: 20px;
+
+  ${mobile({
+    display: "none",
+  })}
 `;
 
 const Title = styled.h3`
   margin-bottom: 30px;
   /* text-align: center; */
+  ${mobile({
+    marginBottom: "15px",
+  })}
 `;
 
 const List = styled.ul`
@@ -80,12 +92,23 @@ const ListItem = styled.li`
 const Right = styled.div`
   flex: 1;
   padding: 20px;
+  ${mobile({
+    backgroundColor: "#eee",
+  })}
 `;
 
 const ContactItem = styled.div`
   margin-bottom: 20px;
   display: flex;
   align-items: center;
+
+  &:hover {
+    color: #028082;
+  }
+
+  ${mobile({
+    marginBottom: "10px",
+  })}
 `;
 
 const Footer = () => {

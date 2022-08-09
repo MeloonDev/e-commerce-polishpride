@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import SearchIcon from "@mui/icons-material/Search";
-import { useState } from "react";
-import { useEffect } from "react";
+import { mobile } from "../responsive";
 
 const Container = styled.div`
   height: 60px;
@@ -11,21 +10,36 @@ const Container = styled.div`
   background-color: #fff;
   top: 0;
   border-bottom: 1px solid gray;
+
+  ${mobile({
+    height: "50px",
+    width: "100vw",
+  })}
 `;
 
 const Wrapper = styled.div`
   /* max-width: 80vw;
   margin: 0 auto; */
+
   padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  ${mobile({
+    padding: "5px 10px",
+    height: "80%",
+  })}
 `;
 
 const Left = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
+
+  ${mobile({
+    display: "none",
+  })}
 `;
 
 const SearchContainer = styled.div`
@@ -48,12 +62,20 @@ const Input = styled.input`
 const Center = styled.div`
   flex: 1;
   text-align: center;
+
+  ${mobile({
+    textAlign: "left",
+  })}
 `;
 
 const Logo = styled.h1`
   font-weight: bold;
   font-family: "Work Sans", sans-serif;
   cursor: pointer;
+
+  ${mobile({
+    fontSize: "25px",
+  })}
 `;
 
 const Right = styled.div`
@@ -71,6 +93,12 @@ const MenuItem = styled.div`
   &:hover {
     color: #028082;
     text-decoration: underline;
+  }
+
+  &:first-of-type {
+    ${mobile({
+      display: "none",
+    })}
   }
 `;
 

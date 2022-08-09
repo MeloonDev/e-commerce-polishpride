@@ -3,11 +3,16 @@ import Announcement from "../components/Announcement";
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import Products from "../components/Products";
+import { mobile } from "../responsive";
 
 const Container = styled.div``;
 
 const Title = styled.h1`
   margin: 20px;
+
+  ${mobile({
+    margin: "10px 10px 0 10px",
+  })}
 `;
 
 const FilterContainer = styled.div`
@@ -17,11 +22,19 @@ const FilterContainer = styled.div`
 
 const Filter = styled.div`
   margin: 20px;
+
+  ${mobile({
+    margin: "10px",
+  })}
 `;
 
 const FilterText = styled.span`
   font-size: 20px;
   font-weight: 400;
+
+  ${mobile({
+    fontSize: "15px",
+  })}
 `;
 
 const Select = styled.select`
