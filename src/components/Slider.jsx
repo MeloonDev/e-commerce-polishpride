@@ -1,9 +1,10 @@
 import styled from "styled-components";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { sliderItems } from "../data";
 import { mobile } from "../responsive";
+import { useRef } from "react";
 
 const Container = styled.div`
   margin-top: 10px;
@@ -116,10 +117,24 @@ const Button = styled.button`
 
 const Slider = () => {
   const [slideIndex, setSlideIndex] = useState(0);
+  const timeoutRef = useRef(null);
 
-  // useEffect(() => {
-  //   const interval = setInterval(handleClick("right"), 5000);
-  // }, []);
+  const resetTimeout = () => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+  };
+
+  useEffect(() => {
+    resetTimeout();
+    timeoutRef.current = setTimeout(() => {
+      setSlideIndex((prevIndex) => (prevIndex === 2 ? 0 : prevIndex + 1));
+    }, 5000);
+
+    return () => {
+      resetTimeout();
+    };
+  }, [slideIndex]);
 
   const handleClick = (direction) => {
     if (direction === "left") {
