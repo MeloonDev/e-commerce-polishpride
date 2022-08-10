@@ -27,54 +27,87 @@ export const categories = [
     id: 1,
     img: "https://i.postimg.cc/hGP8PRLt/marlon-alves-A0m-SSCEVh9-A-unsplash.jpg",
     title: "T-SHIRTY!",
+    cat: "tshirts",
   },
   {
     id: 2,
     img: "https://i.postimg.cc/sgzvsPYj/the-ian-ZCoqcr-Wp9-GY-unsplash.jpg",
     title: "BLUZY",
+    cat: "hoodies",
   },
   {
     id: 3,
     img: "https://i.postimg.cc/Xv7qyV1t/santhosh-vaithiyanathan-yl-Hc-Wlr-Mlzs-unsplash.jpg",
     title: "SPODNIE",
+    cat: "pants",
   },
 ];
 
-export const popularProducts = [
+export const allProducts = [
   {
     id: 1,
+
     img: "https://i.postimg.cc/4d7yKTxt/removal-ai-tmp-62effd6c7e2da.png",
     title: "T-shirt POLISHPRIDE BASIC",
-    price: "99",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    price: "90",
+    cat: "women",
+    collection: "basic",
+    color: "black",
   },
   {
     id: 2,
+
     img: "https://i.postimg.cc/JzgZhdzW/bao-bao-GREEBEty-R9-Y-unsplash-prev-ui.png",
     title: "T-shirt POLISHPRIDE BASIC",
-    price: "99",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    price: "399",
+    cat: "men",
+    collection: "basic",
+    color: "white",
   },
   {
     id: 3,
+
     img: "https://i.postimg.cc/4d7yKTxt/removal-ai-tmp-62effd6c7e2da.png",
     title: "T-shirt POLISHPRIDE BASIC",
-    price: "99",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    price: "1",
+    cat: "tshirts",
+    collection: "fancy",
+    color: "black",
   },
   {
     id: 4,
+
     img: "https://i.postimg.cc/4d7yKTxt/removal-ai-tmp-62effd6c7e2da.png",
     title: "T-shirt POLISHPRIDE BASIC",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     price: "99",
+    cat: "hoodies",
+    collection: "fancy",
+    color: "green",
   },
   {
     id: 5,
+
     img: "https://i.postimg.cc/4d7yKTxt/removal-ai-tmp-62effd6c7e2da.png",
     title: "T-shirt POLISHPRIDE BASIC",
-    price: "99",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    price: "199",
+    cat: "pants",
+    collection: "casual",
+    color: "white",
   },
   {
     id: 6,
+
     img: "https://i.postimg.cc/4d7yKTxt/removal-ai-tmp-62effd6c7e2da.png",
     title: "T-shirt POLISHPRIDE BASIC",
-    price: "99",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    price: "299",
+    cat: "tshirts",
+    collection: "casual",
+    color: "white",
   },
 ];

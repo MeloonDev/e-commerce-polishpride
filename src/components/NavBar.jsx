@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import SearchIcon from "@mui/icons-material/Search";
 import { mobile } from "../responsive";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   height: 60px;
@@ -113,12 +114,26 @@ const NavBar = () => {
           </SearchContainer>
         </Left>
         <Center>
-          <Logo>POLISHPRIDE</Logo>
+          <Link to="/" style={{ textDecoration: "none", color: "black" }}>
+            <Logo>POLISHPRIDE</Logo>
+          </Link>
         </Center>
         <Right>
-          <MenuItem>HOME</MenuItem>
-          <MenuItem>PRODUKTY</MenuItem>
-          <MenuItem>KONTAKT</MenuItem>
+          <Link to="/" style={{ textDecoration: "none", color: "black" }}>
+            <MenuItem>HOME</MenuItem>
+          </Link>
+          <Link
+            to="/products/all"
+            style={{ textDecoration: "none", color: "black" }}
+          >
+            <MenuItem>PRODUKTY</MenuItem>
+          </Link>
+          <Link
+            to="/contact"
+            style={{ textDecoration: "none", color: "black" }}
+          >
+            <MenuItem>KONTAKT</MenuItem>
+          </Link>
         </Right>
       </Wrapper>
     </Container>

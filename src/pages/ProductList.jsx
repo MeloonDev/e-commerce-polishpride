@@ -1,18 +1,29 @@
+import { useState } from "react";
+import { useLocation } from "react-router-dom";
 import styled from "styled-components";
 import Announcement from "../components/Announcement";
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import Products from "../components/Products";
 import { mobile } from "../responsive";
+import { Link } from "react-router-dom";
 
 const Container = styled.div``;
 
-const Title = styled.h1`
-  margin: 20px;
+// const Title = styled.h1`
+//   margin: 20px;
+//   text-transform: capitalize;
 
-  ${mobile({
-    margin: "10px 10px 0 10px",
-  })}
+//   ${mobile({
+//     margin: "10px 10px 0 10px",
+//   })}
+// `;
+
+const MainSelect = styled.select`
+  border: none;
+  font-size: 35px;
+  font-weight: 700;
+  margin: 20px;
 `;
 
 const FilterContainer = styled.div`
@@ -45,41 +56,63 @@ const Select = styled.select`
 const Option = styled.option``;
 
 const ProductList = () => {
+  const location = useLocation();
+  const [cat, setCat] = useState(location.pathname.split("/")[2]);
+  const [filters, setFilters] = useState({});
+  const [sort, setSort] = useState("newest");
+
+  const handleFilters = (e) => {
+    const value = e.target.value;
+    setFilters({ ...filters, [e.target.name]: value });
+  };
+
   return (
     <Container>
       <NavBar />
       <Announcement />
-      <Title>T-shirty</Title>
+      {/* <Title>{cat}</Title> */}
+      <MainSelect onChange={(e) => setCat(e.target.value)}>
+        <Option value="all" selected>
+          Wszystko
+        </Option>
+        <Option value="men">Mężczyzna</Option>
+        <Option value="women">Kobieta</Option>
+        <Option value="tshirts">T-shirty</Option>
+        <Option value="hoodies">Bluzy</Option>
+        <Option value="pants">Spodnie</Option>
+      </MainSelect>
       <FilterContainer>
         <Filter>
           <FilterText>Filtruj Produkty</FilterText>
-          <Select>
+          <Select name="collection" onChange={handleFilters}>
             <Option disabled selected>
               Kolekcja
             </Option>
-            <Option>Basic</Option>
-            <Option>Fancy</Option>
-            <Option>Casual</Option>
+            <Option value="basic">Basic</Option>
+            <Option value="fancy">Fancy</Option>
+            <Option value="casual">Casual</Option>
           </Select>
-          <Select>
+          <Select name="color" onChange={handleFilters}>
             <Option disabled selected>
               Kolor
             </Option>
-            <Option>Biały</Option>
-            <Option>Czarny</Option>
-            <Option>Zielony</Option>
+            <Option value="white">Biały</Option>
+            <Option value="black">Czarny</Option>
+            <Option value="green">Zielony</Option>
           </Select>
         </Filter>
         <Filter>
           <FilterText>Sortuj Produkty</FilterText>
-          <Select>
-            <Option selected>Najnowsze</Option>
-            <Option>Cena rosnąco</Option>
-            <Option>Cena malejąco</Option>
+          <Select onChange={(e) => setSort(e.target.value)}>
+            <Option selected value="newest">
+              Najnowsze
+            </Option>
+            <Option value="asc">Cena rosnąco</Option>
+            <Option value="desc">Cena malejąco</Option>
           </Select>
         </Filter>
       </FilterContainer>
-      <Products />
+      <Products cat={cat} filters={filters} sort={sort} />
       <Footer />
     </Container>
   );
