@@ -6,7 +6,6 @@ import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import Products from "../components/Products";
 import { mobile } from "../responsive";
-import { Link } from "react-router-dom";
 
 const Container = styled.div``;
 

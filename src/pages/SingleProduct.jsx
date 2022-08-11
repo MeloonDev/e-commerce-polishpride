@@ -3,6 +3,9 @@ import Announcement from "../components/Announcement";
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import { mobile } from "../responsive";
+import { useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { allProducts } from "../data";
 
 const Container = styled.div``;
 
@@ -103,7 +106,8 @@ const BtnContainer = styled.div`
   })}
 `;
 
-const Button = styled.button`
+const Button = styled.a`
+  display: inline-block;
   margin-top: 20px;
   margin-right: 40px;
 
@@ -112,6 +116,7 @@ const Button = styled.button`
   color: #028082;
   padding: 15px 30px;
   font-size: 30px;
+  text-decoration: none;
   cursor: pointer;
   transition: all 0.3s;
 
@@ -126,23 +131,28 @@ const Button = styled.button`
 `;
 
 const SingleProduct = () => {
+  const location = useLocation();
+  const id = location.pathname.split("/")[2];
+  const [product, setProduct] = useState({});
+
+  useEffect(() => {
+    const getProduct = allProducts.find((item) => item.id.toString() === id);
+
+    setProduct(getProduct);
+  }, [id]);
+
   return (
     <Container>
       <NavBar />
       <Announcement />
       <Wrapper>
         <ImgContainer>
-          <Image src="https://i.postimg.cc/4d7yKTxt/removal-ai-tmp-62effd6c7e2da.png" />
+          <Image src={product.img} />
         </ImgContainer>
         <InfoContainer>
-          <Title>T-shirt POLISHPRIDE BASIC</Title>
-          <Price>99 zł</Price>
-          <Desc>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi
-            quaerat fuga magni maxime vel at quo nam doloribus. Reprehenderit
-            obcaecati quibusdam ad suscipit! Magni illo quam debitis culpa
-            architecto quis.
-          </Desc>
+          <Title>{product.title}</Title>
+          <Price>{product.price}zł</Price>
+          <Desc>{product.desc}</Desc>
 
           <Filter>
             <FilterTitle>Dostępne rozmiary</FilterTitle>
@@ -155,7 +165,9 @@ const SingleProduct = () => {
             </FilterSize>
           </Filter>
           <BtnContainer>
-            <Button>Kup Teraz</Button>
+            <Button href={product.link} target="_blank">
+              Kup Teraz
+            </Button>
           </BtnContainer>
         </InfoContainer>
       </Wrapper>

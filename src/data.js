@@ -54,6 +54,7 @@ export const allProducts = [
     cat: "women",
     collection: "basic",
     color: "black",
+    link: "https://www.allegro.pl",
   },
   {
     id: 2,
@@ -65,6 +66,7 @@ export const allProducts = [
     cat: "men",
     collection: "basic",
     color: "white",
+    link: "https://www.allegro.pl",
   },
   {
     id: 3,
@@ -76,6 +78,7 @@ export const allProducts = [
     cat: "tshirts",
     collection: "fancy",
     color: "black",
+    link: "https://www.allegro.pl",
   },
   {
     id: 4,
@@ -87,6 +90,7 @@ export const allProducts = [
     cat: "hoodies",
     collection: "fancy",
     color: "green",
+    link: "https://www.allegro.pl",
   },
   {
     id: 5,
@@ -98,6 +102,7 @@ export const allProducts = [
     cat: "pants",
     collection: "casual",
     color: "white",
+    link: "https://www.allegro.pl",
   },
   {
     id: 6,
@@ -109,5 +114,6 @@ export const allProducts = [
     cat: "tshirts",
     collection: "casual",
     color: "white",
+    link: "https://www.allegro.pl",
   },
 ];
