@@ -5,12 +5,12 @@ import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PhoneEnabledIcon from "@mui/icons-material/PhoneEnabled";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
-import { mobile } from "../responsive";
+import { mobile, medium } from "../responsive";
 
 const Container = styled.div`
   display: flex;
 
-  ${mobile({
+  ${medium({
     flexDirection: "column",
   })}
 `;
@@ -65,6 +65,11 @@ const Center = styled.div`
 const Title = styled.h3`
   margin-bottom: 30px;
   /* text-align: center; */
+
+  ${medium({
+    textAlign: "center",
+  })}
+
   ${mobile({
     marginBottom: "15px",
   })}
@@ -76,6 +81,10 @@ const List = styled.ul`
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+
+  ${medium({
+    textAlign: "center",
+  })}
 `;
 
 const ListItem = styled.li`

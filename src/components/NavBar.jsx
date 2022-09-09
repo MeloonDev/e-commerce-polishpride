@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import SearchIcon from "@mui/icons-material/Search";
-import { mobile } from "../responsive";
+import { mobile, medium } from "../responsive";
 import { Link } from "react-router-dom";
 
 const Container = styled.div`
@@ -38,7 +38,7 @@ const Left = styled.div`
   display: flex;
   align-items: center;
 
-  ${mobile({
+  ${medium({
     display: "none",
   })}
 `;
@@ -73,6 +73,10 @@ const Logo = styled.h1`
   font-weight: bold;
   font-family: "Work Sans", sans-serif;
   cursor: pointer;
+
+  ${medium({
+    textAlign: "left",
+  })}
 
   ${mobile({
     fontSize: "25px",
