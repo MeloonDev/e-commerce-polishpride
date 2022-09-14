@@ -79,7 +79,7 @@ const Logo = styled.h1`
   })}
 
   ${mobile({
-    fontSize: "25px",
+    fontSize: "20px",
   })}
 `;
 
@@ -100,11 +100,10 @@ const MenuItem = styled.div`
     text-decoration: underline;
   }
 
-  &:first-of-type {
-    ${mobile({
-      display: "none",
-    })}
-  }
+  ${mobile({
+    fontSize: "12px",
+    marginLeft: "7px",
+  })}
 `;
 
 const NavBar = () => {
