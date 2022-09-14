@@ -131,10 +131,7 @@ const NavBar = () => {
           >
             <MenuItem>PRODUKTY</MenuItem>
           </Link>
-          <Link
-            to="/contact"
-            style={{ textDecoration: "none", color: "black" }}
-          >
+          <Link to="/" style={{ textDecoration: "none", color: "black" }}>
             <MenuItem>KONTAKT</MenuItem>
           </Link>
         </Right>
